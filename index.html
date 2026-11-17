@@ -84,10 +84,102 @@
   <details><summary>Do I need to be an advanced athlete?</summary><p>No. The suitable starting point depends on your current ability and the service you choose.</p></details>
   <details><summary>Are individual training plans the same as ongoing coaching?</summary><p>No. A plan is a one-time written programme. Ongoing coaching involves interaction, feedback and guidance over time.</p></details>
 </section>
+
 <section class="section enrol" id="enrol">
-  <div class="section-kicker">07 — TAKE THE NEXT STEP</div>
-  <div class="enrol-panel"><div><h2>Ready to <em>begin?</em></h2><p>Choose your coaching option and get in touch to discuss your goals and the next steps.</p></div><div class="enrol-details"><p><strong>THENIX CBU</strong><br>Calisthenics · Strength · Skill Development</p><p>WhatsApp enquiries will be available once the contact number is configured.</p></div></div>
+  <div class="section-kicker">07 — JOIN THENIX CBU</div>
+
+  <div class="section-heading">
+    <h2>Start your <em>journey.</em></h2>
+    <p>Complete the application below. Your details will be prepared in a WhatsApp message so we can discuss your coaching and get you started.</p>
+  </div>
+
+  <div class="application-panel">
+    <form id="applicationForm">
+
+      <label for="studentName">Full name *</label>
+      <input id="studentName" name="name" type="text" placeholder="Enter your full name" required>
+
+      <label for="studentAge">Age *</label>
+      <input id="studentAge" name="age" type="number" min="13" max="100" placeholder="Your age" required>
+
+      <label for="studentPhone">Your WhatsApp number *</label>
+      <input id="studentPhone" name="phone" type="tel" placeholder="+260..." required>
+
+      <label for="studentStatus">Are you a CBU student? *</label>
+      <select id="studentStatus" name="studentStatus" required>
+        <option value="">Select an answer</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label for="package">Select your coaching package or service *</label>
+      <select id="package" name="package" required>
+        <option value="">Choose an option</option>
+        <optgroup label="Monthly Coaching">
+          <option>Online Coaching — K400</option>
+          <option>Group Skills Coaching — K300</option>
+          <option>Group Physique Coaching — K250</option>
+          <option>Personal Skills Coaching — K350</option>
+          <option>Personal Physique Coaching — K300</option>
+          <option>Form Coaching — K200</option>
+        </optgroup>
+        <optgroup label="Individual Services">
+          <option>Individual Form Assessment — K50</option>
+          <option>One-Day Training Guidance — K100</option>
+          <option>Custom 3-Day Training Plan — K50</option>
+          <option>Custom 7-Day Training Plan — K100</option>
+          <option>Custom 4-Week Workout Plan — K200</option>
+          <option>30-Minute Phone/Video Coaching — K50</option>
+          <option>60-Minute Phone/Video Coaching — K100</option>
+          <option>Skill-Specific Programme — K250–K400</option>
+        </optgroup>
+      </select>
+
+      <label for="fitnessLevel">Your current fitness level *</label>
+      <select id="fitnessLevel" name="level" required>
+        <option value="">Select your level</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+        <option>Not sure</option>
+      </select>
+
+      <label for="trainingGoal">What is your main training goal? *</label>
+      <select id="trainingGoal" name="goal" required>
+        <option value="">Select your goal</option>
+        <option>Build muscle and improve physique</option>
+        <option>Lose weight and improve fitness</option>
+        <option>Develop calisthenics skills</option>
+        <option>Build overall strength</option>
+        <option>Improve exercise technique</option>
+        <option>Other</option>
+      </select>
+
+      <label for="trainingMode">Preferred training arrangement</label>
+      <select id="trainingMode" name="mode">
+        <option value="">Select if applicable</option>
+        <option>Online</option>
+        <option>In-person at CBU campus</option>
+        <option>In-person at my residence</option>
+        <option>Group training</option>
+        <option>One-on-one training</option>
+        <option>Not sure yet</option>
+      </select>
+
+      <label for="extraDetails">Additional information</label>
+      <textarea id="extraDetails" name="details" rows="5" placeholder="Tell us about your goals, experience, availability or anything else we should know."></textarea>
+
+      <button type="submit" class="application-submit">
+        Submit Application →
+      </button>
+
+      <p class="form-note">
+        Your application will open in WhatsApp for you to review and send directly to THENIX CBU.
+      </p>
+    </form>
+  </div>
 </section>
+  
 <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">T</span><span>THENIX<span class="brand-sub"> CBU</span></span></a><p>Built through bodyweight. Driven by progress.</p><span>© THENIX CBU</span></footer>
 </main>
 <script src="script.js"></script>
