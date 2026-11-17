@@ -26,3 +26,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+/* THENIX CBU WHATSAPP APPLICATION */
+
+const applicationForm = document.getElementById("applicationForm");
+
+if (applicationForm) {
+  applicationForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(applicationForm);
+
+    const message = `
+*NEW THENIX CBU COACHING APPLICATION*
+
+*STUDENT DETAILS*
+Name: ${formData.get("name")}
+Age: ${formData.get("age")}
+WhatsApp: ${formData.get("phone")}
+CBU Student: ${formData.get("studentStatus")}
+
+*COACHING DETAILS*
+Package: ${formData.get("package")}
+Fitness Level: ${formData.get("level")}
+Main Goal: ${formData.get("goal")}
+Preferred Arrangement: ${formData.get("mode") || "Not specified"}
+
+*ADDITIONAL INFORMATION*
+${formData.get("details") || "None provided"}
+
+-------------------------
+THENIX CBU APPLICATION
+`;
+
+    const whatsappURL =
+      "https://wa.me/260953779241?text=" +
+      encodeURIComponent(message);
+
+    window.location.href = whatsappURL;
+  });
+}
+
