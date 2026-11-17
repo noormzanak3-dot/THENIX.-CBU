@@ -794,3 +794,88 @@ button {
     animation-duration: .01ms !important;
   }
   }
+
+/* THENIX CBU APPLICATION FORM */
+
+.application-panel {
+  max-width: 700px;
+  margin: 35px auto 0;
+  padding: 35px;
+  background: #101813;
+  border: 1px solid rgba(170, 205, 120, 0.25);
+  border-radius: 18px;
+}
+
+#applicationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#applicationForm label {
+  color: #dce8d3;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+#applicationForm input,
+#applicationForm select,
+#applicationForm textarea {
+  width: 100%;
+  padding: 15px;
+  background: #080d0a;
+  color: #ffffff;
+  border: 1px solid #354638;
+  border-radius: 9px;
+  font: inherit;
+  font-size: 15px;
+  outline: none;
+}
+
+#applicationForm input:focus,
+#applicationForm select:focus,
+#applicationForm textarea:focus {
+  border-color: #a8c96b;
+}
+
+#applicationForm select option {
+  background: #101813;
+  color: white;
+}
+
+#applicationForm textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.application-submit {
+  margin-top: 22px;
+  padding: 17px;
+  background: #a8c96b;
+  color: #101810;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.application-submit:hover {
+  background: #c0df83;
+}
+
+.form-note {
+  color: #a9b5a8;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .application-panel {
+    padding: 20px;
+    margin-top: 25px;
+  }
+}
